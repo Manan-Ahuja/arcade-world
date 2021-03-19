@@ -41,12 +41,12 @@
     <div>
     <form method="POST">
     <div class="game1">Game 1: Can you guess the number ?
-        <input onmouseover="out.value='Lets Play'" class="inp" name="num" type="text" maxlength="1">
+        <input onmouseover="out.value='Lets Play', num.value=''" class="inp" name="num" type="text" maxlength="1">
         <input onmouseover="out.value='Lets Play'" class="checkbutton btn btn-outline-success" type="button" value="Check" onclick="check(this.form)">
         <br><br>
         <div>
         <img name="preview" src="ghostwin2.gif">&nbsp;&nbsp;&nbsp;
-        <input name="out" class="out" type="text" value="Lets Play">
+        <input readonly name="out" class="out" type="text" value="Lets Play">
         </div>
     </div>
     </form>
@@ -72,12 +72,12 @@
 
     <div class="game1">Game 4: Rock Paper Scissor<br><br>
         <div>
-            <input class="game4output" id="game4output" name="game4output" value="Let's Play!">
+            <input readonly class="game4output" id="game4output" name="game4output" value="Let's Play!">
             <img name="rps" src="rps.gif">
             <img name="rpsgame" src="rps.png">
-            <img id="thumbnails" src="rock.png" onclick="game4('rock')">
-            <img id="thumbnails" src="paper.png" onclick="game4('paper')">
-            <img id="thumbnails" src="scissor.png" onclick="game4('scissor')">
+            <img onmouseover="game4output.value='Play!'" id="thumbnails" src="rock.png" onclick="game4('rock')">
+            <img onmouseover="game4output.value='Play!'" id="thumbnails" src="paper.png" onclick="game4('paper')">
+            <img onmouseover="game4output.value='Play!'" id="thumbnails" src="scissor.png" onclick="game4('scissor')">
         </div>
     </div><br><br><br><br><br><br><br>
     
