@@ -143,6 +143,10 @@ audio::-webkit-media-controls-panel{
     border: lightgreen 4px solid;
 }
 
+.phone{
+    font-size: 12px;
+}
+
 .game3button{
     text-align: center;
     border: 3px solid grey;
